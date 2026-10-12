@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CoreBIQ Design System</title>
+<link rel="stylesheet" href="css/app.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+<header class="cb-header">
+  <button class="cb-icon-btn" id="menuOpen" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"><i data-lucide="menu" class="cb-icon"></i></button>
+  <a class="cb-header__brand" href="#"><span class="cb-wordmark">CoreBIQ</span></a>
+  <div class="cb-header__actions">
+    <button class="cb-icon-btn" aria-label="Search"><i data-lucide="search" class="cb-icon"></i></button>
+    <button class="cb-icon-btn" aria-label="Refresh"><i data-lucide="refresh-cw" class="cb-icon"></i></button>
+    <span class="cb-avatar" aria-label="Profile">Q</span>
+  </div>
+</header>
+<div class="cb-menu-overlay" id="menuOverlay"></div>
+<aside class="cb-sidebar" id="sidebar" aria-label="Main menu" aria-hidden="true">
+  <div class="cb-sidebar__header"><span class="cb-sidebar__brand">CoreBIQ</span><button class="cb-icon-btn" id="menuClose" aria-label="Close navigation"><i data-lucide="x" class="cb-icon"></i></button></div>
+  <div class="cb-sidebar__scroll">
+    <div class="cb-sidebar__section"><div class="cb-sidebar__heading">Workspace</div>
+      <a class="cb-sidebar__item is-active" href="#"><i data-lucide="house" class="cb-icon"></i>Home</a>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="search" class="cb-icon"></i>Search</a>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="compass" class="cb-icon"></i>Explore tools</a>
+    </div>
+    <div class="cb-sidebar__section"><div class="cb-sidebar__heading">Pinned tools</div>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="receipt-text" class="cb-icon"></i>GST Tools</a>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="calculator" class="cb-icon"></i>Calculator</a>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="qr-code" class="cb-icon"></i>QR Maker</a>
+      <a class="cb-sidebar__item" href="#"><i data-lucide="file-text" class="cb-icon"></i>Invoice Generator</a>
+    </div>
+  </div>
+  <div class="cb-sidebar__footer"><div class="cb-profile-row"><span class="cb-avatar">Q</span><div><strong>CoreBIQ Account</strong><div class="cb-caption">Settings and profile</div></div><button class="cb-icon-btn" aria-label="Settings"><i data-lucide="settings" class="cb-icon"></i></button></div></div>
+</aside>
+<main class="cb-main cb-container">
+  <div class="cb-eyebrow">Design system preview</div><h1 class="cb-display">CoreBIQ UI components</h1><p class="cb-muted">A reusable, responsive foundation for dashboards and business tools.</p>
+  <section class="cb-card cb-mt-6"><div class="cb-card__header"><h2 class="cb-card__title">Buttons</h2></div><div class="cb-flex cb-wrap cb-gap-3"><button class="cb-btn cb-btn--primary">Primary action</button><button class="cb-btn cb-btn--tonal">Tonal</button><button class="cb-btn cb-btn--outline">Outlined</button><button class="cb-btn cb-btn--secondary">Secondary</button><button class="cb-btn cb-btn--danger">Delete</button><button class="cb-icon-btn" aria-label="Edit"><i data-lucide="pencil" class="cb-icon"></i></button></div></section>
+  <section class="cb-card cb-mt-4"><div class="cb-card__header"><h2 class="cb-card__title">Form controls</h2></div><div class="cb-form-grid"><div class="cb-field"><label class="cb-field__label" for="demoName">Full name <span class="cb-required">*</span></label><input class="cb-input" id="demoName" placeholder="Enter full name"><span class="cb-help">Enter the name associated with the account.</span></div><div class="cb-field"><label class="cb-field__label" for="demoType">Module</label><select class="cb-select" id="demoType"><option>Select module</option><option>GST Tools</option><option>Utilities</option><option>Invoices</option></select></div><div class="cb-field"><label class="cb-field__label" for="demoNotes">Notes</label><textarea class="cb-textarea" id="demoNotes" placeholder="Add notes"></textarea></div><div class="cb-field"><label class="cb-field__label">Preference</label><label class="cb-check-row"><input type="checkbox" class="cb-check">Enable notifications</label><label class="cb-check-row"><input type="checkbox" class="cb-switch" role="switch">Dark theme (sample control)</label></div></div></section>
+  <section class="cb-card cb-mt-4"><div class="cb-card__header"><h2 class="cb-card__title">Cards and statuses</h2></div><div class="cb-grid"><div class="cb-stat"><div class="cb-stat__label">Total invoices</div><div class="cb-stat__value">1,248</div><div class="cb-stat__change">+8.4% this month</div></div><div class="cb-stat"><div class="cb-stat__label">Pending tasks</div><div class="cb-stat__value">24</div><span class="cb-chip cb-chip--warning">Pending</span></div><div class="cb-stat"><div class="cb-stat__label">GST status</div><div class="cb-stat__value">Ready</div><span class="cb-chip cb-chip--success">Verified</span></div></div></section>
+  <section class="cb-card cb-mt-4"><div class="cb-card__header"><h2 class="cb-card__title">Data table</h2><button class="cb-btn cb-btn--outline cb-btn--sm"><i data-lucide="download" class="cb-icon cb-icon--sm"></i>Export</button></div><div class="cb-table-wrap"><table class="cb-table"><thead><tr><th>Reference</th><th>Module</th><th>Status</th><th>Action</th></tr></thead><tbody><tr><td class="cb-mono">INV-00001</td><td>Invoices</td><td><span class="cb-chip cb-chip--success">Complete</span></td><td><button class="cb-icon-btn" aria-label="View invoice"><i data-lucide="eye" class="cb-icon"></i></button></td></tr><tr><td class="cb-mono">GST-00002</td><td>GST Tools</td><td><span class="cb-chip cb-chip--warning">Pending</span></td><td><button class="cb-icon-btn" aria-label="Edit GST record"><i data-lucide="pencil" class="cb-icon"></i></button></td></tr></tbody></table></div></section>
+  <section class="cb-card cb-mt-4"><div class="cb-card__header"><h2 class="cb-card__title">Alerts and progress</h2></div><div class="cb-alert"><i data-lucide="info" class="cb-icon"></i><div><strong>Information</strong><div>Use these alert styles for helpful status messages.</div></div></div><div class="cb-progress cb-mt-4"><div class="cb-progress__bar" style="width:68%"></div></div><p class="cb-caption cb-mt-2">Example progress: 68%</p></section>
+</main>
+<nav class="cb-bottom-nav" aria-label="Primary navigation">
+  <a class="cb-bottom-nav__item is-active" href="#"><span class="cb-bottom-nav__icon"><i data-lucide="house" class="cb-icon"></i></span><span>Home</span></a>
+  <a class="cb-bottom-nav__item" href="#"><span class="cb-bottom-nav__icon"><i data-lucide="receipt-text" class="cb-icon"></i></span><span>GST</span></a>
+  <a class="cb-bottom-nav__item" href="#"><span class="cb-bottom-nav__icon"><i data-lucide="calculator" class="cb-icon"></i></span><span>Utilities</span></a>
+  <a class="cb-bottom-nav__item" href="#"><span class="cb-bottom-nav__icon"><i data-lucide="file-text" class="cb-icon"></i></span><span>Invoices</span></a>
+</nav>
+<script>
+if (window.lucide) lucide.createIcons();
+const sidebar=document.getElementById('sidebar'), overlay=document.getElementById('menuOverlay'), openBtn=document.getElementById('menuOpen'), closeBtn=document.getElementById('menuClose');
+function setMenu(open){sidebar.classList.toggle('is-open',open);overlay.classList.toggle('is-open',open);sidebar.setAttribute('aria-hidden',String(!open));openBtn.setAttribute('aria-expanded',String(open));document.body.style.overflow=open?'hidden':''}
+openBtn.addEventListener('click',()=>setMenu(true));closeBtn.addEventListener('click',()=>setMenu(false));overlay.addEventListener('click',()=>setMenu(false));document.addEventListener('keydown',e=>{if(e.key==='Escape')setMenu(false)});
+let startX=0,startY=0;
+document.addEventListener('touchstart',e=>{if(e.touches.length===1){startX=e.touches[0].clientX;startY=e.touches[0].clientY}},{passive:true});
+document.addEventListener('touchend',e=>{if(e.changedTouches.length!==1)return;const dx=e.changedTouches[0].clientX-startX,dy=e.changedTouches[0].clientY-startY;if(Math.abs(dx)<70||Math.abs(dx)<Math.abs(dy)*1.3)return;if(!sidebar.classList.contains('is-open')&&startX<28&&dx>0)setMenu(true);else if(sidebar.classList.contains('is-open')&&dx<0)setMenu(false)},{passive:true});
+</script>
+</body></html>
