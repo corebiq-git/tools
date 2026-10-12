@@ -1,0 +1,75 @@
+/* CoreBIQ Design Tokens — brand, typography, spacing, sizing, elevation */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Roboto+Mono:wght@400;500;600&display=swap');
+
+:root {
+  color-scheme: light;
+  --cb-brand: #0B57D0;
+  --cb-brand-hover: #0842A0;
+  --cb-brand-pressed: #062E73;
+  --cb-brand-container: #D7E3FF;
+  --cb-on-brand: #FFFFFF;
+  --cb-secondary: #00639B;
+  --cb-secondary-container: #D1E4FF;
+
+  --cb-bg: #F8F9FA;
+  --cb-surface: #FFFFFF;
+  --cb-surface-1: #F8F9FC;
+  --cb-surface-2: #F1F3F4;
+  --cb-surface-3: #E8EAED;
+  --cb-overlay: rgb(20 24 32 / 42%);
+
+  --cb-text: #1F1F1F;
+  --cb-text-secondary: #444746;
+  --cb-text-muted: #6B7280;
+  --cb-border: #DADCE0;
+  --cb-border-strong: #AEB4BE;
+
+  --cb-success: #146C2E;
+  --cb-success-bg: #E6F4EA;
+  --cb-warning: #8A4B00;
+  --cb-warning-bg: #FFF4D6;
+  --cb-danger: #B3261E;
+  --cb-danger-bg: #FCE8E6;
+  --cb-info: #0B57D0;
+  --cb-info-bg: #E8F0FE;
+
+  --cb-font: "Outfit", Arial, sans-serif;
+  --cb-font-mono: "Roboto Mono", Consolas, monospace;
+
+  --cb-text-xs: 12px;
+  --cb-text-sm: 13px;
+  --cb-text-md: 14px;
+  --cb-text-base: 16px;
+  --cb-text-lg: 18px;
+  --cb-text-xl: 22px;
+  --cb-text-2xl: 28px;
+  --cb-text-3xl: 34px;
+
+  --cb-space-1: 4px;
+  --cb-space-2: 8px;
+  --cb-space-3: 12px;
+  --cb-space-4: 16px;
+  --cb-space-5: 20px;
+  --cb-space-6: 24px;
+  --cb-space-8: 32px;
+  --cb-space-10: 40px;
+  --cb-space-12: 48px;
+
+  --cb-radius-xs: 6px;
+  --cb-radius-sm: 8px;
+  --cb-radius-md: 12px;
+  --cb-radius-lg: 16px;
+  --cb-radius-xl: 24px;
+  --cb-radius-pill: 999px;
+
+  --cb-shadow-1: 0 1px 2px rgb(16 24 40 / 8%);
+  --cb-shadow-2: 0 3px 10px rgb(16 24 40 / 10%);
+  --cb-shadow-3: 0 12px 32px rgb(16 24 40 / 16%);
+
+  --cb-control-height: 48px;
+  --cb-header-height: 64px;
+  --cb-bottom-nav-height: 76px;
+  --cb-sidebar-width: 300px;
+  --cb-content-max: 1200px;
+  --cb-transition: 180ms ease;
+}

@@ -1,0 +1,27 @@
+/* Buttons — all variants and interaction states */
+.cb-btn { display: inline-flex; align-items: center; justify-content: center; gap: 9px; min-height: var(--cb-control-height); padding: 0 18px; border: 1px solid transparent; border-radius: var(--cb-radius-pill); font-size: var(--cb-text-md); font-weight: 600; line-height: 1.2; text-align: center; cursor: pointer; user-select: none; transition: background var(--cb-transition), color var(--cb-transition), border-color var(--cb-transition), box-shadow var(--cb-transition), transform var(--cb-transition); }
+.cb-btn:active { transform: scale(.98); }
+.cb-btn:focus-visible { outline: 3px solid color-mix(in srgb, var(--cb-brand) 35%, transparent); outline-offset: 2px; }
+.cb-btn:disabled, .cb-btn[aria-disabled="true"] { opacity: .45; cursor: not-allowed; transform: none; }
+.cb-btn--primary { background: var(--cb-brand); color: var(--cb-on-brand); }
+.cb-btn--primary:hover { background: var(--cb-brand-hover); }
+.cb-btn--primary:active { background: var(--cb-brand-pressed); }
+.cb-btn--secondary { background: var(--cb-surface-2); color: var(--cb-text); }
+.cb-btn--secondary:hover { background: var(--cb-surface-3); }
+.cb-btn--tonal { background: var(--cb-brand-container); color: var(--cb-brand-hover); }
+.cb-btn--tonal:hover { background: #C4D6FF; }
+.cb-btn--outline { background: transparent; color: var(--cb-brand); border-color: var(--cb-border-strong); }
+.cb-btn--outline:hover { background: var(--cb-info-bg); border-color: var(--cb-brand); }
+.cb-btn--text { background: transparent; color: var(--cb-brand); padding-inline: 12px; }
+.cb-btn--text:hover { background: var(--cb-info-bg); }
+.cb-btn--danger { background: var(--cb-danger); color: #fff; }
+.cb-btn--danger:hover { background: #8C1D18; }
+.cb-btn--success { background: var(--cb-success); color: #fff; }
+.cb-btn--sm { min-height: 36px; padding-inline: 13px; font-size: var(--cb-text-sm); }
+.cb-btn--lg { min-height: 54px; padding-inline: 24px; font-size: var(--cb-text-base); }
+.cb-btn--block { display: flex; width: 100%; }
+.cb-icon-btn { width: 44px; height: 44px; flex: 0 0 44px; display: inline-grid; place-items: center; border: 0; border-radius: 50%; background: transparent; color: var(--cb-text-secondary); cursor: pointer; transition: background var(--cb-transition), color var(--cb-transition); }
+.cb-icon-btn:hover { background: var(--cb-surface-2); color: var(--cb-brand); }
+.cb-icon-btn:disabled { opacity: .4; cursor: not-allowed; }
+.cb-btn__spinner { width: 16px; height: 16px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: cb-spin .7s linear infinite; }
+@keyframes cb-spin { to { transform: rotate(360deg); } }

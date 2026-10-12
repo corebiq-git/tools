@@ -1,0 +1,13 @@
+/* Type scale */
+.cb-display { font-size: clamp(30px, 4vw, var(--cb-text-3xl)); line-height: 1.12; font-weight: 600; letter-spacing: -.8px; margin: 0 0 var(--cb-space-3); }
+h1, .cb-h1 { font-size: clamp(26px, 3vw, var(--cb-text-2xl)); line-height: 1.2; font-weight: 600; letter-spacing: -.5px; margin: 0 0 var(--cb-space-3); }
+h2, .cb-h2 { font-size: var(--cb-text-xl); line-height: 1.3; font-weight: 600; margin: 0 0 var(--cb-space-3); }
+h3, .cb-h3 { font-size: var(--cb-text-lg); line-height: 1.35; font-weight: 600; margin: 0 0 var(--cb-space-2); }
+h4, .cb-h4 { font-size: var(--cb-text-base); line-height: 1.4; font-weight: 600; margin: 0 0 var(--cb-space-2); }
+p { margin: 0 0 var(--cb-space-4); }
+.cb-caption { font-size: var(--cb-text-xs); line-height: 1.45; color: var(--cb-text-muted); }
+.cb-label { display: block; font-size: var(--cb-text-sm); font-weight: 600; margin-bottom: var(--cb-space-2); }
+.cb-eyebrow { font-size: var(--cb-text-xs); line-height: 1.4; text-transform: uppercase; letter-spacing: 1.2px; font-weight: 700; color: var(--cb-brand); }
+.cb-link { color: var(--cb-brand); font-weight: 500; text-underline-offset: 3px; }
+.cb-link:hover { text-decoration: underline; }
+.cb-wordmark { font-size: 25px; font-weight: 700; letter-spacing: -1px; }

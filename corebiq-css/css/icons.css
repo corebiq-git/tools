@@ -1,0 +1,13 @@
+/* SVG/Lucide icon sizing. Load Lucide SVGs or lucide.createIcons() in JS. */
+.cb-icon { width: 20px; height: 20px; flex: 0 0 auto; stroke-width: 1.9; }
+.cb-icon--sm { width: 16px; height: 16px; }
+.cb-icon--lg { width: 24px; height: 24px; }
+.cb-icon--xl { width: 40px; height: 40px; }
+.cb-icon--muted { color: var(--cb-text-muted); }
+.cb-icon--brand { color: var(--cb-brand); }
+.cb-icon--success { color: var(--cb-success); }
+.cb-icon--danger { color: var(--cb-danger); }
+.cb-icon-tile { width: 48px; height: 48px; border-radius: var(--cb-radius-md); display: inline-grid; place-items: center; background: var(--cb-info-bg); color: var(--cb-brand); }
+.cb-icon-tile--green { background: var(--cb-success-bg); color: var(--cb-success); }
+.cb-icon-tile--amber { background: var(--cb-warning-bg); color: var(--cb-warning); }
+.cb-icon-tile--red { background: var(--cb-danger-bg); color: var(--cb-danger); }
