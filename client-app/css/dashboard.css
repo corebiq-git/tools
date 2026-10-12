@@ -1,0 +1,4 @@
+
+.cb-dashboard-welcome{padding:clamp(20px,4vw,32px);border:1px solid #dce6f5;border-radius:var(--cb-radius-xl);background:linear-gradient(120deg,#edf4ff,#f8faff 58%,#f5f1ff)}
+.cb-dashboard-welcome p{max-width:650px;margin-bottom:0}.cb-dashboard-welcome .cb-display{max-width:760px}
+@media(max-width:600px){.cb-dashboard-welcome{padding:20px;border-radius:18px}.cb-dashboard-welcome .cb-display{font-size:28px}.cb-stat{padding:14px}.cb-stat__value{font-size:25px}}

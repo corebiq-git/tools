@@ -1,0 +1,13 @@
+
+.cb-auth-body{min-height:100vh;display:grid;place-items:center;padding:24px;background:radial-gradient(ellipse at top left,#eaf1ff,transparent 48%),var(--cb-bg)}
+.cb-auth-shell{width:min(100%,440px);background:var(--cb-surface);border:1px solid var(--cb-border);border-radius:24px;padding:clamp(22px,5vw,36px);box-shadow:var(--cb-shadow-2)}
+.cb-auth-brand{display:flex;align-items:center;gap:10px;color:var(--cb-text);margin-bottom:28px}
+.cb-auth-logo{width:42px;height:42px;display:grid;place-items:center;border-radius:14px;background:var(--cb-brand);color:white;font-weight:800;font-size:21px}
+.cb-auth-title{font-size:27px;font-weight:600;letter-spacing:-.6px;margin:0 0 6px}
+.cb-auth-subtitle{color:var(--cb-text-muted);margin:0 0 24px}
+.cb-auth-tabs{display:grid;grid-template-columns:1fr 1fr;gap:4px;padding:4px;border-radius:14px;background:var(--cb-surface-2);margin-bottom:22px}
+.cb-auth-tab{min-height:42px;border:0;border-radius:11px;background:transparent;color:var(--cb-text-secondary);font-weight:600;cursor:pointer}
+.cb-auth-tab.is-active{background:white;color:var(--cb-brand);box-shadow:var(--cb-shadow-1)}
+.cb-auth-message{font-size:13px;margin:14px 0 0;padding:11px 13px;border-radius:10px;display:none}
+.cb-auth-message.is-visible{display:block}.cb-auth-message.error{background:var(--cb-danger-bg);color:var(--cb-danger)}.cb-auth-message.success{background:var(--cb-success-bg);color:var(--cb-success)}
+.cb-auth-note{font-size:12px;color:var(--cb-text-muted);margin-top:20px;line-height:1.5}
