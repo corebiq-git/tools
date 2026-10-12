@@ -1,4 +1,5 @@
-const firebaseConfig = {
+// CoreBIQ Compliance — Firebase Configuration
+export const firebaseConfig = {
   apiKey: "AIzaSyAY0eJ0iAVxP2tn2RLe7wVNB8Q15Vnjd-g",
   authDomain: "cmb-40001.firebaseapp.com",
   projectId: "cmb-40001",
