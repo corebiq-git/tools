@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B57D0"><title>Home | CoreBIQ Compliance</title>
+<link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/modules.css"><link rel="stylesheet" href="css/components.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head><body>
+<div id="appShellMount"></div>
+<main class="cb-main"><section class="hero"><div class="eyebrow">Client portal</div><h1>Your compliance, clearly organised.</h1><p class="muted">Welcome back, <strong id="welcomeName">Client</strong>. Track your filings, documents and payments in one place.</p></section><section class="summary-grid"><article class="summary"><small>Total tasks</small><strong id="complianceCount">—</strong></article><article class="summary"><small>Pending</small><strong id="pendingCount">—</strong></article><article class="summary"><small>Pending amount</small><strong id="pendingAmount">—</strong></article></section><section class="panel"><div class="panel-head"><h2>Compliance due next</h2><a href="compliance.html" style="color:var(--blue);font-weight:600">View all →</a></div><div class="panel-body" id="dashboardCompliance"><div class="empty">Loading compliance…</div></div></section><section class="summary-grid"><a class="summary" href="compliance.html"><small>Module</small><strong>Compliance ↗</strong></a><a class="summary" href="documents.html"><small>Module</small><strong>Documents ↗</strong></a><a class="summary" href="payments.html"><small>Module</small><strong>Payments ↗</strong></a></section></main>
+
+<div class="cb-toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/dashboard.js"></script>
+</body></html>

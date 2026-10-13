@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0B57D0"><title>CoreBIQ Compliance | Client Access</title>
+<link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/auth.css"></head>
+<body class="cb-auth-body"><main class="cb-auth-shell">
+<a class="cb-auth-brand" href="index.html"><span class="cb-auth-logo">Q</span><span class="cb-wordmark">CoreBIQ</span></a>
+<h1 class="cb-auth-title" id="authTitle">Client sign in</h1><p class="cb-auth-subtitle" id="authSubtitle">Access your compliance updates and documents securely.</p>
+<div class="cb-auth-tabs"><button class="cb-auth-tab is-active" id="signInTab" type="button">Sign in</button><button class="cb-auth-tab" id="signUpTab" type="button">Create account</button></div>
+<form id="authForm" class="cb-form">
+<div class="cb-field"><label class="cb-field__label" for="email">Email address <span class="cb-required">*</span></label><input class="cb-input" id="email" type="email" autocomplete="email" required placeholder="you@company.com"></div>
+<div class="cb-field"><label class="cb-field__label" for="password">Password <span class="cb-required">*</span></label><input class="cb-input" id="password" type="password" autocomplete="current-password" required minlength="6" placeholder="At least 6 characters"></div>
+<div class="cb-field" id="confirmField" hidden><label class="cb-field__label" for="confirmPassword">Confirm password</label><input class="cb-input" id="confirmPassword" type="password" minlength="6" placeholder="Re-enter password"></div>
+<button class="cb-btn cb-btn--primary cb-btn--block" id="submitButton" type="submit">Sign in</button><button class="cb-btn cb-btn--text cb-btn--block" id="forgotButton" type="button">Forgot password?</button></form>
+<div class="cb-auth-message" id="authMessage" role="status" aria-live="polite"></div>
+<p class="cb-auth-note">Sign-up is available to new users. Dashboard access requires an email match in the client registry.</p></main>
+<script type="module" src="js/auth.js"></script></body></html>

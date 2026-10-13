@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B57D0"><title>Payments | CoreBIQ Compliance</title>
+<link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/modules.css"><link rel="stylesheet" href="css/components.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="https://unpkg.com/lucide@latest"></script>
+</head><body>
+<div id="appShellMount"></div>
+<main class="cb-main"><div class="eyebrow">Workspace</div><h1>Payments</h1><p class="muted">Pay outstanding compliance fees using UPI.</p><section class="summary-grid"><article class="summary"><small>Pending tasks</small><strong id="paymentPendingCount">—</strong></article><article class="summary"><small>Outstanding total</small><strong id="paymentPendingAmount">—</strong></article><article class="summary"><small>UPI ID</small><strong style="font-size:16px">accountree@upi</strong></article></section><section class="panel"><div class="panel-head"><h2>Outstanding fees</h2><button class="btn small" id="paymentsRefresh">Refresh</button></div><div class="panel-body"><div id="paymentTasks" class="task-list"><div class="empty">Loading fees…</div></div></div></section><div class="note">Verify the payee and amount in your UPI app before approving. The portal does not automatically confirm successful payment.</div></main>
+
+<div class="cb-toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/payments.js"></script>
+</body></html>

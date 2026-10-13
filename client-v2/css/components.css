@@ -1,0 +1,5 @@
+
+#appShellMount{display:contents}
+.cb-sidebar__item.is-active{background:var(--cb-brand-container);color:var(--cb-brand-hover);font-weight:600}
+.cb-bottom-nav__item.is-active{color:var(--cb-brand);font-weight:600}
+.cb-bottom-nav__item.is-active .cb-bottom-nav__icon{background:var(--cb-brand-container)}

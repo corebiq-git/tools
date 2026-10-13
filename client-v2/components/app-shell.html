@@ -1,0 +1,32 @@
+<header class="cb-header">
+  <button class="cb-icon-btn" id="menuOpen" aria-label="Open menu" aria-controls="sidebar" aria-expanded="false"><i data-lucide="menu" class="cb-icon"></i></button>
+  <a class="cb-header__brand" href="dashboard.html"><span class="cb-wordmark">CoreBIQ</span><span class="cb-caption">Compliance</span></a>
+  <div class="cb-header__actions">
+    <button class="cb-icon-btn" id="refreshButton" aria-label="Refresh"><i data-lucide="refresh-cw" class="cb-icon"></i></button>
+    <button class="cb-icon-btn" id="profileButton" aria-label="Account menu"><i data-lucide="circle-user-round" class="cb-icon"></i></button>
+  </div>
+</header>
+<div class="cb-menu-overlay" id="menuOverlay"></div>
+<aside class="cb-sidebar" id="sidebar" aria-label="Main menu" aria-hidden="true">
+  <div class="cb-sidebar__header"><span class="cb-sidebar__brand">CoreBIQ</span><button class="cb-icon-btn" id="menuClose" aria-label="Close menu"><i data-lucide="x" class="cb-icon"></i></button></div>
+  <div class="cb-sidebar__scroll">
+    <div class="cb-sidebar__section"><div class="cb-sidebar__heading">Workspace</div>
+      <a class="cb-sidebar__item" data-nav="home" href="dashboard.html"><i data-lucide="house" class="cb-icon"></i>Home</a>
+      <a class="cb-sidebar__item" data-nav="compliance" href="compliance.html"><i data-lucide="calendar-check" class="cb-icon"></i>Compliance</a>
+      <a class="cb-sidebar__item" data-nav="documents" href="documents.html"><i data-lucide="folder" class="cb-icon"></i>Documents</a>
+      <a class="cb-sidebar__item" data-nav="payments" href="payments.html"><i data-lucide="wallet" class="cb-icon"></i>Payments</a>
+    </div>
+    <div class="cb-sidebar__section"><div class="cb-sidebar__heading">Account</div>
+      <a class="cb-sidebar__item" data-nav="account" href="account.html"><i data-lucide="user-round" class="cb-icon"></i>My account</a>
+      <button class="cb-sidebar__item" id="sidebarSignOut"><i data-lucide="log-out" class="cb-icon"></i>Sign out</button>
+    </div>
+  </div>
+  <div class="cb-sidebar__footer"><div class="cb-profile-row"><span class="cb-avatar" id="avatarInitials">CB</span><div class="cb-min-w-0"><strong id="clientName">Client account</strong><div class="cb-caption cb-truncate" id="clientEmail">Loading…</div></div></div></div>
+</aside>
+<nav class="cb-bottom-nav" aria-label="Primary navigation">
+  <a class="cb-bottom-nav__item" data-nav="home" href="dashboard.html"><span class="cb-bottom-nav__icon"><i data-lucide="house" class="cb-icon"></i></span><span>Home</span></a>
+  <a class="cb-bottom-nav__item" data-nav="compliance" href="compliance.html"><span class="cb-bottom-nav__icon"><i data-lucide="calendar-check" class="cb-icon"></i></span><span>Compliance</span></a>
+  <a class="cb-bottom-nav__item" data-nav="documents" href="documents.html"><span class="cb-bottom-nav__icon"><i data-lucide="folder" class="cb-icon"></i></span><span>Documents</span></a>
+  <a class="cb-bottom-nav__item" data-nav="account" href="account.html"><span class="cb-bottom-nav__icon"><i data-lucide="user-round" class="cb-icon"></i></span><span>Account</span></a>
+</nav>
+<div class="cb-toast" id="toast" role="status" aria-live="polite"></div>

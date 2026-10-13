@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B57D0"><title>Account | CoreBIQ Compliance</title>
+<link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/modules.css"><link rel="stylesheet" href="css/components.css">
+<script src="https://unpkg.com/lucide@latest"></script>
+</head><body>
+<div id="appShellMount"></div>
+<main class="cb-main"><div class="eyebrow">Account</div><h1>My account</h1><p class="muted">Your signed-in client profile.</p><section class="panel"><div class="panel-head"><h2>Profile details</h2></div><div class="panel-body"><div class="cb-profile-row"><span class="cb-avatar" id="accountAvatar">CB</span><div><strong id="accountName">Loading profile…</strong><div class="cb-caption" id="accountEmail"></div></div></div><div class="details"><span>Client ID</span><strong id="accountClientId">—</strong></div><div class="details"><span>Business name</span><strong id="accountBusinessName">—</strong></div><button class="btn" id="accountSignOut" style="width:100%;margin-top:18px">Sign out</button></div></section></main>
+
+<div class="cb-toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/account.js"></script>
+</body></html>

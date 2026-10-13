@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0B57D0"><title>Compliance | CoreBIQ Compliance</title>
+<link rel="stylesheet" href="css/app.css"><link rel="stylesheet" href="css/dashboard.css"><link rel="stylesheet" href="css/modules.css"><link rel="stylesheet" href="css/components.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script><script src="https://unpkg.com/lucide@latest"></script>
+</head><body>
+<div id="appShellMount"></div>
+<main class="cb-main"><div class="eyebrow">Workspace</div><h1>Compliance</h1><p class="muted">Track tasks, due dates and outstanding fees.</p><section class="summary-grid"><article class="summary"><small>Total tasks</small><strong id="complianceCount">—</strong></article><article class="summary"><small>Pending</small><strong id="pendingCount">—</strong></article><article class="summary"><small>Pending amount</small><strong id="pendingAmount">—</strong></article></section><section class="panel"><div class="panel-head"><h2>My compliance tasks</h2><button class="btn small" id="complianceRefresh">Refresh</button></div><div class="panel-body"><div class="filters"><input id="complianceSearch" class="field" type="search" placeholder="Search compliance or period"><select id="statusFilter" class="field"><option value="all">All statuses</option><option value="pending">Pending</option><option value="completed">Completed</option><option value="overdue">Overdue</option></select></div><div id="complianceList" class="task-list"><div class="empty">Loading compliance…</div></div></div></section><div class="note">Pay a pending fee to generate a UPI QR for <b>accountree@upi</b>. Payment is not automatically verified by this portal.</div></main>
+
+<div class="cb-toast" id="toast" role="status" aria-live="polite"></div>
+<script type="module" src="js/compliance.js"></script>
+</body></html>
