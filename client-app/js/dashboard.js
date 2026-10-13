@@ -1,4 +1,3 @@
-```javascript
 import {
   initializeApp
 } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
@@ -479,4 +478,3 @@ onAuthStateChanged(auth, async user => {
 if (window.lucide) {
   window.lucide.createIcons();
 }
-```
