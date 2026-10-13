@@ -2,6 +2,26 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebas
 import { getAuth,onAuthStateChanged,signOut } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
 import { getFirestore,collection,query,where,getDocs,limit } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
 import { firebaseConfig } from "./firebase-config.js";
+import {
+  collection,
+  query,
+  where,
+  getDocs
+} from "https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js";
+
+async function loadCompliance(db, clientId) {
+  const q = query(
+    collection(db, "compliance"),
+    where("clientId", "==", clientId)
+  );
+
+  const snapshot = await getDocs(q);
+
+  return snapshot.docs.map(doc => ({
+    id: doc.id,
+    ...doc.data()
+  }));
+}
 const app=initializeApp(firebaseConfig),auth=getAuth(app),db=getFirestore(app),$=id=>document.getElementById(id);
 const sidebar=$("sidebar"),overlay=$("menuOverlay"),openBtn=$("menuOpen");
 function menu(open){sidebar.classList.toggle("is-open",open);overlay.classList.toggle("is-open",open);sidebar.setAttribute("aria-hidden",String(!open));openBtn.setAttribute("aria-expanded",String(open));document.body.style.overflow=open?"hidden":"";}
